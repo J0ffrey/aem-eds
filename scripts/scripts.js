@@ -93,6 +93,10 @@ async function loadEager(doc) {
   }
 }
 
+
+
+
+
 /**
  * Loads everything that doesn't need to be delayed.
  * @param {Element} doc The container element
@@ -115,6 +119,40 @@ async function loadLazy(doc) {
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
 }
+
+/**
+ * Test function
+ * --------------------------------------------------------
+ */
+
+
+async function jsondisplay(main) {
+  await loadBlocks(document);
+  const jsondisplay = document.querySelector('.section.jsondisplay-container .jsondisplay div div');
+  var URLjsondisplay = jsondisplay.innerHTML;
+  console.log(URLjsondisplay);
+
+  
+  console.log(obj);
+  var tbl = '<table></table>';
+  jsondisplay.append(tbl);
+  var table = document.querySelector('.section.jsondisplay-container .jsondisplay div div table');
+  for(var i=0;i<obj.length;i++)
+  {
+    var tr="<tr>";
+    var td1="<td>"+obj[i]["id"]+"</td>";
+    var td2="<td>"+obj[i]["name"]+"</td>";
+    var td3="<td>"+obj[i]["color"]+"</td></tr>";
+    table.append(tr+td1+td2+td3); 
+  }
+}
+jsondisplay();
+
+/**
+ * Test function
+ * --------------------------------------------------------
+ */
+
 
 /**
  * Loads everything that happens a lot later,
