@@ -12,6 +12,8 @@ import transferRepeatableDOM from './components/repeat.js';
 import { handleSubmit } from './submit.js';
 import { getSubmitBaseUrl, emailPattern } from './constant.js';
 
+console.log('forms on');
+
 export const DELAY_MS = 0;
 let captchaField;
 let afModule;
