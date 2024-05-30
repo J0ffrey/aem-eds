@@ -124,7 +124,7 @@ async function loadLazy(doc) {
  * Test function
  * --------------------------------------------------------
  */
-
+/*
 
 async function jsondisplay(main) {
   await loadBlocks(document);
@@ -132,7 +132,6 @@ async function jsondisplay(main) {
   var URLjsondisplay = jsondisplay.innerHTML;
   console.log(URLjsondisplay);
 
-  
   console.log(obj);
   var tbl = '<table></table>';
   jsondisplay.append(tbl);
@@ -147,7 +146,7 @@ async function jsondisplay(main) {
   }
 }
 jsondisplay();
-
+*/
 /**
  * Test function
  * --------------------------------------------------------
