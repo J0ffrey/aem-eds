@@ -1,0 +1,49 @@
+.jsondisplay{
+    overflow: hidden;
+}
+
+.jsondisplay li{
+    float: left;
+    width:30%;
+    margin-right:3%;
+    background-color:#FFF;
+    list-style-type: none;
+    position:relative;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    min-height: 484px;
+}
+
+.jsondisplay li h3, 
+.jsondisplay li p{
+    padding: 0 20px;
+}
+
+.jsondisplay li p{
+    font-size:0.6em;
+    margin:0;
+}
+.jsondisplay li p.product{
+    background-color: rgb(211, 16, 12);
+    color:#FFF;
+    position: absolute;
+    top:5px;
+    left:-3px;
+}
+.jsondisplay li p.description{
+    min-height:230px;
+}
+.jsondisplay li h3{
+    font-size:1em;
+    margin-top:40px;
+    min-height: 110px;
+} 
+.jsondisplay li a.btn{
+    background-color:#5c2fcd;
+    color:#FFF;
+    text-decoration: none;
+    font-size:0.6em;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin:20px;
+}
